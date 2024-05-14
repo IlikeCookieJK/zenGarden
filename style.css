@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+/* font-family: 'Cabin Sketch'; */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* font-family: 'Architects Daughter'; */
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+#css-zen-garden{
+    margin: 0 3rem 0 3rem;
+}
+
+header>h2,h1 {
+    background-color: #d0a262;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1:only-of-type {
+    height: 10rem;
+    padding-top: 2rem;
+}
+
+h2:last-child {
+    padding-bottom: 1rem;
+    padding-top: 0;
+}
+
+h2 abbr:only-child {
+    padding: 0 .8rem 0 .8rem;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 5rem;
+    font-family: 'Cabin Sketch';
+    background-color: #d0a262;
+    color: rgb(32, 114, 131);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    top: -2rem;
+}
+
+.intro {
+    display: flex;
+    flex-flow: column;
+}
+
+header:first-of-type {
+    margin: 0 -3rem 1.5rem -3rem;
+    background-color: rgb(122, 68, 20);
+    background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;   
+}
+
+header>h2::after {
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    background-image: url(image/coffee.png);
+    background-size: cover;
+    content: '';
+    transform: translateY(-40%);
+    position: relative;
+    left: 10%;
+}
+
+header>h2::before {
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    background-image: url(image/coffee-two.png);
+    background-size: cover;
+    content: '';
+    transform: translateY(-40%);
+    position: relative;
+    right: 10%;
+}
+
+header>h2 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.summary {
+    margin-top: 0.67em;
+    border: .1rem #915c4c solid ;
+    border-image-slice: 1;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0rem 20rem 0 20rem;
+    
+}
+
+.summary,.preamble {
+    font-size: 1.5rem;
+}
+
+#zen-summary{
+    padding: 1em .5rem 1em .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.intro .summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 0rem 0 0rem;
+    
+}
+
+section div {
+    background-color: rgb(1, 19, 1);
+}
+
+section ~ div {
+    background-color: rgb(1, 19, 1);
+}
+
+div + aside {
+    background-color: rgb(1, 19, 1);
+}
+
+:not(header,h1,h2,h3,abbr,div,p,ol,li,a,footer,aside,ul,nav,span,body,html) {
+    background-color: rgb(1, 19, 1);
+}
+
+body {
+    background-color: rgb(122, 68, 20);
+    background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+}
+
+[class^=page] {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+div:empty {
+    height: .3rem;
+    background-color: transparent;
+}
+
+
+::selection {
+    background-color: beige;
+    color: black;
+}
+
+p,h3 {
+    color: #e6e0d4;
+    font-family: 'Cabin Sketch';
+}
+
+a:link {
+    color: pink;
+}
+
+a:hover {
+    color: rgb(16, 123, 32);
+    background-color: pink;
+}
+
+a:visited {
+    color: rgb(170, 114, 222);
+}
+
+a:active {
+    color: rgb(115, 205, 115);
+    background-color: rgb(162, 54, 54);
+}
+
+a:focus {
+    color: rgb(115, 205, 115);
+    background-color: rgb(162, 54, 54);
+}
+
+:root {
+    font-family: 'Cabin Sketch';
+}
+
+aside:nth-last-of-type(1) {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h3::first-letter {
+    color: rgb(202, 196, 13);
+    font-size: 1.3em;
+}
+
+[href] {
+    display: inline;
+    border-bottom: 1px solid rgb(54, 180, 230);
+}
+
+div[class="preamble"] {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 1.5rem 3.5rem 1rem 2rem;
+}
+
+.main>[id|=zen] {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 85%;
+}
+
+[class~="main"] {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex-basis: 68.3%;
+}
+
+[class*="sidebar"] {
+    color: rgb(212, 206, 197);
+    font-size: 1.2rem;
+    width: 25rem;
+    padding: .5rem .5rem 1rem 2rem;
+    width: 35rem;
+    float: right;
+    display: flex;
+z
+}
+
+aside:nth-last-of-type(1) {
+    display: flex;
+    flex-basis: 31.7%;
+}
+
+div[class$="supporting"]>div {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 2rem;
+}
+
+footer{
+    display: flex;
+    order: 2;
+    flex-basis: 95%;
+    font-size: 2.5rem;
+    padding: 1rem 0 1rem 0;
+    justify-content: space-around;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    align-items: center;
+}
+
+div.page-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.design-selection {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+ul>li {
+    padding-bottom: 2rem;
+}
+
+.design-archives {
+    padding-bottom: 2rem;
+}
+
+a:visited:hover {
+    color: white;
+    background-color: rgb(124, 8, 125) ;
+}
+
